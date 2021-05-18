@@ -1,0 +1,33 @@
+{
+  "name": "vue-datetime-formatter",
+  "version": "0.1.0",
+  "description": "A plugin for format date and datetime by mixined filters and element-ui formatter",
+  "main": "dist/formatter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JoyXuBaidu/datetimeformatter.git"
+  },
+  "keywords": [
+    "vue",
+    "plugin",
+    "element-ui",
+    "date",
+    "datetime",
+    "formatter"
+  ],
+  "author": "xhj",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.14.0",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.36.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.7.0"
+  }
+}
