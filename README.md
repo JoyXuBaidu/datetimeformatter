@@ -42,10 +42,11 @@ tableData: [
 */
 
 <el-table :data="tableData" border>
-      <el-table-column prop="startTime" :formatter="dateTimeFormatter('startTime', 'YYYY/MM/DD')" label="开始时间"></el-table-column>
-      <el-table-column prop="endTime" :formatter="dateTimeFormatter('startTime', 'YYYY-MM-DD')" label="结束时间"></el-table-column>
-      <el-table-column :formatter="dateTimeRangeFormatter('startTime','endTime', 'YYYY/MM/DD hh:mm:ss', ' ~ ')" label="时间范围"></el-table-column>
+      <el-table-column prop="startTime" :formatter="dateTimeFormatter('startTime', 'YYYY/MM/DD')" label="开始时间"></el-table-column> // 2021/01/01
+      <el-table-column prop="endTime" :formatter="dateTimeFormatter('endTime', 'YYYY-MM-DD')" label="结束时间"></el-table-column> // 2021-01-02
+      <el-table-column :formatter="dateTimeRangeFormatter('startTime','endTime', 'YYYY/MM/DD hh:mm:ss', ' - ')" label="时间范围"></el-table-column> // 2021/01/01 13:24:00 - 2021/01/02 14:23:34
+
 </el-table>
 ```
 result:
-![1](https://user-images.githubusercontent.com/56863139/118585126-da610400-b7ca-11eb-998c-a69d7bd03212.png)
+![formatter](https://user-images.githubusercontent.com/56863139/118585548-b6ea8900-b7cb-11eb-9243-968ab0e6dab0.png)
