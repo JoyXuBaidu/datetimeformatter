@@ -17,7 +17,9 @@
     "element-ui",
     "date",
     "datetime",
-    "formatter"
+    "formatter",
+    "elementui table",
+    "table formatter"
   ],
   "author": "xhj",
   "license": "ISC",
