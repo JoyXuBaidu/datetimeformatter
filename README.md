@@ -8,7 +8,12 @@ Related links:  [filter(vue)](https://vuejs.org/v2/guide/filters.html)   [elemen
 
 ## How to use
 ### init
+npm i vue-datetime-formatter
 ```
+// main.js
+
+import DateTimeFormatterPlugin from 'vue-datetime-formatter'
+Vue.use(DateTimeFormatterPlugin)
 
 ```
 
