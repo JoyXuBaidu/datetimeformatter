@@ -1,6 +1,6 @@
 {
   "name": "vue-datetime-formatter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A plugin for format date and datetime by mixined filters and element-ui formatter",
   "main": "dist/formatter.js",
   "scripts": {
