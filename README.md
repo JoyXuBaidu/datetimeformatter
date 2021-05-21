@@ -27,9 +27,14 @@ Example：
 <div>{{dateTimeResource | dateTimeFilter('YYYY/MM/DD')}}</div> // 2021/05/18
 <div>{{dateTimeResource | dateTimeFilter('YYYY-MM-DD')}}</div> // 2021-05-18
 
-<div>{{dateTimeResource | dateTimeFilter('YY/MM/DD HH:mm')}}</div> // 21/05/18 10:24
 <div>{{dateTimeResource | dateTimeFilter('YYYY/MM/DD HH:mm')}}</div> // 2021/05/18 10:24
 <div>{{dateTimeResource | dateTimeFilter('YYYY/MM/DD HH:mm:ss')}}</div> // 2021/05/18 10:24:20
+
+// dateTimeResource='20210508030505'
+
+<div>{{dateTimeResource | dateTimeFilter('YY/MM/DD HH:mm:ss')}}</div> // 21/05/08 03:05:05
+<div>{{dateTimeResource | dateTimeFilter('YY/M/D hh:mm:ss')}}</div> // 21/5/8 03:05:05
+<div>{{dateTimeResource | dateTimeFilter('YY/M/D h:m:s')}}</div> // 21/5/8 3:5:5
 ```
 ### dateTimeFormatter & dateTimeRangeFormatter
 These two formatters both based on element-ui table's formatter attribute.
@@ -56,3 +61,23 @@ tableData: [
 ```
 result:
 ![formatter](https://user-images.githubusercontent.com/56863139/118585548-b6ea8900-b7cb-11eb-9243-968ab0e6dab0.png)
+
+## Format Options
+data source: '20210508030505'
+
+| format     | Example | Describe |
+| ----------- | ----------- | ---------- |
+| YYYY      | 2021       | 4 characters year value |
+| YY   | 21        | 2 characters year value |
+| M   | 5        | month value |
+| MM   | 05        | 2 characters month value |
+| D   | 8        | date value |
+| DD   | 08        | 2 characters date value |
+| h   | 3        | hour value |
+| hh   | 03        | 2 characters hour value |
+| H   | 3        | hour value |
+| HH   | 03        | 2 characters hour value |
+| m   | 5        | minute value |
+| mm   | 05       | 2 characters minute value |
+| m   | 3        | second value |
+| mm   | 03       | 2 characters second value |
