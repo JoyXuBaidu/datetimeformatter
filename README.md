@@ -1,6 +1,6 @@
 # DatetimeFormatter Plugin
 
-This is a plugin for formatting the pure datetime data from backend like this: '20210518102420' to formatted date or datetime value which is supposed to be displayed on frontend. And also, it can show a formatted datetime range based on two pure datetime data and the format you set.
+This is a plugin for formatting the pure datetime data from the backend like this: '20210518102420' to formatted date or datetime value which is supposed to be displayed on frontend. And also, it can show a formatted datetime range based on two pure datetime data and the format you set.
 
 Three functions are mixined into Vue, one is a vue filter: ***dateTimeFilter***, two are formatter callback functions ***dateTimeFormatter*** and ***dateTimeRangeFormatter***, which are based on element-ui table *':formatter'* attribute.
 
@@ -27,6 +27,7 @@ Example：
 <div>{{dateTimeResource | dateTimeFilter('YYYY/MM/DD')}}</div> // 2021/05/18
 <div>{{dateTimeResource | dateTimeFilter('YYYY-MM-DD')}}</div> // 2021-05-18
 
+<div>{{dateTimeResource | dateTimeFilter('YY/MM/DD HH:mm')}}</div> // 21/05/18 10:24
 <div>{{dateTimeResource | dateTimeFilter('YYYY/MM/DD HH:mm')}}</div> // 2021/05/18 10:24
 <div>{{dateTimeResource | dateTimeFilter('YYYY/MM/DD HH:mm:ss')}}</div> // 2021/05/18 10:24:20
 ```
