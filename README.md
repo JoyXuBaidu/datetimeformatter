@@ -50,7 +50,7 @@ dateTimeFormatter(timeAttr, format)
 dateTimeRangeFormatter(startTimeAttr, endTimeAttr, format, [link='~'])
 ```
 
-These two formatters both based on element-ui table's formatter attribute.
+These two formatters are both based on element-ui table's formatter attribute.
 
 For dateTimeFormatter, you can pass the _attribute name_ of the datetime source and _format_ as input to generate the formatted datetime.
 
