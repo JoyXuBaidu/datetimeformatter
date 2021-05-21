@@ -79,5 +79,5 @@ data source: '20210508030505'
 | HH   | 03        | 2 characters hour value |
 | m   | 5        | minute value |
 | mm   | 05       | 2 characters minute value |
-| m   | 3        | second value |
-| mm   | 03       | 2 characters second value |
+| s   | 5        | second value |
+| ss   | 05       | 2 characters second value |
