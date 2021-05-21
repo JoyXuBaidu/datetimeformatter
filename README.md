@@ -17,7 +17,11 @@ Vue.use(DateTimeFormatterPlugin)
 
 ```
 
-### dateTimeFilter(format）
+### dateTimeFilter
+
+```
+dateTimeFilter(format）
+```
 Pass the format template as input attribute and you will get related result.
 
 Example：
@@ -36,7 +40,16 @@ Example：
 <div>{{dateTimeResource | dateTimeFilter('YY/M/D hh:mm:ss')}}</div> // 21/5/8 03:05:05
 <div>{{dateTimeResource | dateTimeFilter('YY/M/D h:m:s')}}</div> // 21/5/8 3:5:5
 ```
-### dateTimeFormatter(timeAttr, format) & dateTimeRangeFormatter(startTimeAttr, endTimeAttr, format, [link='~'])
+### dateTimeFormatter& dateTimeRangeFormatter
+
+```
+dateTimeFormatter(timeAttr, format)
+```
+
+```
+dateTimeRangeFormatter(startTimeAttr, endTimeAttr, format, [link='~'])
+```
+
 These two formatters both based on element-ui table's formatter attribute.
 
 For dateTimeFormatter, you can pass the _attribute name_ of the datetime source and _format_ as input to generate the formatted datetime.
