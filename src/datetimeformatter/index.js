@@ -15,15 +15,20 @@ const DateTimeFormatterPlugin = {
       methods: {
         dateTimeFormatter(attr, format) {
           return (row) => {
+            if (!row[attr]) {
+              return '-'
+            }
             const date = that.initDate(row[attr])
             return that.formatOutput(date, format)
           }
         },
         dateTimeRangeFormatter(startAttr, endAttr, format, link) {
           return (row) => {
+            if (!row[startAttr] || !row[endAttr]) {
+              return '-'
+            }
             const startDate = that.initDate(row[startAttr])
             const endDate = that.initDate(row[endAttr])
-            console.log(that.formatOutput(startDate, format))
             return that.formatOutput(startDate, format) + (link ? link : '~') + that.formatOutput(endDate, format)
           }
         }
