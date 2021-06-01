@@ -18,7 +18,7 @@ const DateTimeFormatterPlugin = {
             if (!row[attr]) {
               return '-'
             }
-            const date = that.initDate(row[attr])
+            const date = that.initDate(String(row[attr]))
             return that.formatOutput(date, format)
           }
         },
@@ -27,8 +27,8 @@ const DateTimeFormatterPlugin = {
             if (!row[startAttr] || !row[endAttr]) {
               return '-'
             }
-            const startDate = that.initDate(row[startAttr])
-            const endDate = that.initDate(row[endAttr])
+            const startDate = that.initDate(String(row[startAttr]))
+            const endDate = that.initDate(String(row[endAttr]))
             return that.formatOutput(startDate, format) + (link ? link : '~') + that.formatOutput(endDate, format)
           }
         }
