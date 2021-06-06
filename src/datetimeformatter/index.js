@@ -8,7 +8,7 @@ const DateTimeFormatterPlugin = {
     _Vue.mixin({
       filters: {
         dateTimeFilter(val, format) {
-          const date = that.initDate(val)
+          const date = that.initDate(String(val))
           return that.formatOutput(date, format)
         }
       },
